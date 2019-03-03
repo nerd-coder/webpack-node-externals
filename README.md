@@ -28,7 +28,7 @@ module.exports = {
 Or you can use it in CLI (_zero config_)
 
 ```sh
-webpack -p --plugins @nerd-coder/webpack-node-externals
+webpack -p --plugin @nerd-coder/webpack-node-externals
 ```
 
 ### Options
