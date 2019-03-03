@@ -1,24 +1,26 @@
 {
-  "name": "webpack-node-externals",
+  "name": "@nerd-coder/webpack-node-externals",
   "version": "1.7.2",
   "description": "Easily exclude node_modules in Webpack bundle",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/liady/webpack-node-externals.git"
+    "url": "https://github.com/nerd-coder/webpack-node-externals.git"
   },
   "dependencies": {},
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.5.3",
-    "mock-fs": "^4.4.2",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "mock-fs": "^4.8.0",
     "ncp": "^2.0.0",
-    "webpack": "^1.13.1"
+    "release-it": "*",
+    "webpack": "^4.x.x"
   },
   "scripts": {
-    "unit": "mocha --colors ./test/*.spec.js",
-    "unit-watch": "mocha --colors -w ./test/*.spec.js",
-    "test": "npm run unit-watch"
+    "release": "release-it",
+    "test": "npm run unit-watch",
+    "unit-watch": "mocha --colors -w ./src/test/*.spec.js",
+    "unit": "mocha --colors ./src/test/*.spec.js"
   },
   "keywords": [
     "webpack",
@@ -32,10 +34,8 @@
     "url": "https://github.com/liady"
   },
   "files": [
-    "LICENSE",
-    "README.md",
-    "index.js",
-    "utils.js"
+    "src/index.js",
+    "src/utils.js"
   ],
   "bugs": {
     "url": "https://github.com/liady/webpack-node-externals/issues"
