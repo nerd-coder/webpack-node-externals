@@ -37,6 +37,9 @@
     "src/index.js",
     "src/utils.js"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/liady/webpack-node-externals/issues"
   },

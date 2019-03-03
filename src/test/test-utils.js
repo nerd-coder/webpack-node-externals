@@ -1,5 +1,5 @@
 var mockDir = require('mock-fs')
-var NodeExternals = require('../src')
+var NodeExternals = require('../index')
 var webpack = require('webpack')
 var fs = require('fs')
 var ncp = require('ncp').ncp
@@ -75,13 +75,13 @@ exports.restoreMock = function restoreMock () {
 
 exports.copyModules = function (moduleNames) {
     return Promise.all(moduleNames.map(function (moduleName) {
-        return copyDir(relative('test-webpack', 'modules', moduleName), relative('../node_modules', moduleName))
+        return copyDir(relative('test-webpack', 'modules', moduleName), relative('../../node_modules', moduleName))
     }))
 }
 
 exports.removeModules = function (moduleNames) {
     moduleNames.forEach(function (moduleName) {
-        removeDir(relative('../node_modules', moduleName))
+        removeDir(relative('../../node_modules', moduleName))
     })
 }
 

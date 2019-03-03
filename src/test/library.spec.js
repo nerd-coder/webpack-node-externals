@@ -1,4 +1,4 @@
-var NodeExternals = require('../src')
+var NodeExternals = require('../index')
 var testUtils = require('./test-utils.js')
 var mockNodeModules = testUtils.mockNodeModules
 var restoreMock = testUtils.restoreMock
