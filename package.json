@@ -1,20 +1,22 @@
 {
   "name": "@nerd-coder/webpack-node-externals",
   "version": "1.8.1",
-  "description": "Easily exclude node_modules in Webpack bundle",
+  "description": "Easily exclude node_modules in Webpack bundle (even with zero-config)",
   "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/nerd-coder/webpack-node-externals.git"
   },
-  "dependencies": {},
+  "peerDependencies": {
+    "webpack": "^4.x.x"
+  },
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
-    "mocha": "^6.0.2",
-    "mock-fs": "^4.8.0",
+    "mocha": "^6.1.4",
+    "mock-fs": "^4.10.1",
     "ncp": "^2.0.0",
-    "release-it": "*",
+    "release-it": "^12.3.0",
     "webpack": "^4.x.x"
   },
   "scripts": {

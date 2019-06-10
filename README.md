@@ -1,10 +1,20 @@
 Webpack node modules externals
+
 ==============================
+
 > Easily exclude node modules in Webpack (with Zero-Config)
 
 ## Disclaimer
 
-This lib is a forked version of _Liad Yosef_'s [webpack-node-externals](https://github.com/liady/webpack-node-externals) which have same API but slightly difference usage.
+This lib is a forked version of _Liad Yosef's_ [webpack-node-externals](https://github.com/liady/webpack-node-externals) which do the same thing, but slightly difference usage.
+
+```js
+// Original plugin:
+    externals: [nodeExternals()]
+
+// This plugin
+    plugins: [new NodeExternals()]
+```
 
 ### Usage
 
