@@ -1,6 +1,6 @@
 {
   "name": "@nerd-coder/webpack-node-externals",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "Easily exclude node_modules in Webpack bundle (even with zero-config)",
   "main": "src/index.js",
   "repository": {
