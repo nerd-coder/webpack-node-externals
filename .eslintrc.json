@@ -1,0 +1,30 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "prefer-const": "warn",
+    "no-var": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["src/test/**/*"],
+      "env": {
+        "mocha": true
+      },
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ]
+}

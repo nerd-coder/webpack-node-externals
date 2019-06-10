@@ -10,6 +10,7 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.2.0",
+    "eslint": "^5.16.0",
     "mocha": "^6.0.2",
     "mock-fs": "^4.8.0",
     "ncp": "^2.0.0",
@@ -30,8 +31,8 @@
     "externals"
   ],
   "author": {
-    "name": "Liad Yosef",
-    "url": "https://github.com/liady"
+    "name": "Toan",
+    "url": "https://toan.io"
   },
   "files": [
     "src/index.js",
@@ -41,8 +42,8 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/liady/webpack-node-externals/issues"
+    "url": "https://github.com/nerd-coder/webpack-node-externals/issues"
   },
-  "homepage": "https://github.com/liady/webpack-node-externals",
+  "homepage": "https://github.com/nerd-coder/webpack-node-externals",
   "license": "MIT"
 }

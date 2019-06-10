@@ -1,6 +1,6 @@
 Webpack node modules externals
 ==============================
-> Easily exclude node modules in Webpack
+> Easily exclude node modules in Webpack (with Zero-Config)
 
 ## Disclaimer
 
@@ -12,7 +12,13 @@ This lib is a forked version of _Liad Yosef_'s [webpack-node-externals](https://
 npm i -D @nerd-coder/webpack-node-externals
 ```
 
-In your `webpack.config.js`
+**You can use it in CLI (_zero config_)**
+
+```sh
+webpack -p --plugin @nerd-coder/webpack-node-externals
+```
+
+Or you can add it into your `webpack.config.js`
 
 ```js
 const NodeExternals = require('@nerd-coder/webpack-node-externals')
@@ -23,12 +29,6 @@ module.exports = {
     plugins: [new NodeExternals()], // in order to ignore all modules in node_modules folder
     ...
 }
-```
-
-Or you can use it in CLI (_zero config_)
-
-```sh
-webpack -p --plugin @nerd-coder/webpack-node-externals
 ```
 
 ### Options
